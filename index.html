@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechSolutions - Soluções digitais e tecnologia para empresas.">
+  <title>TechSolutions | Tecnologia e Inovação</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+  <a href="#inicio" class="logo">Tech<span>Solutions.</span></a>
+
+  <button class="menu-toggle" id="menuToggle"
+          aria-label="Abrir menu" aria-expanded="false">
+    ☰
+  </button>
+
+  <nav class="nav" id="nav">
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato" class="nav-button">Contato</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <span class="tag">TECNOLOGIA E INOVAÇÃO</span>
+      <h1>Transformamos ideias em <span>soluções digitais.</span></h1>
+      <p>
+        Desenvolvemos experiências digitais, sistemas e
+        soluções tecnológicas para impulsionar empresas.
+      </p>
+      <div class="hero-actions">
+        <a href="#servicos" class="btn btn-primary">Conheça nossos serviços</a>
+        <a href="#sobre" class="btn btn-outline">Saiba mais</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <span class="code-dot"></span>
+        <span class="code-dot"></span>
+        <span class="code-dot"></span>
+        <pre>
+const empresa = {
+  nome: "TechSolutions",
+  foco: "Inovação",
+  objetivo: "Transformar ideias"
+};
+
+console.log(empresa);
+        </pre>
+        <div class="code-status">● Sistema operacional</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sobre">
+    <div class="section-heading">
+      <span class="tag">QUEM SOMOS</span>
+      <h2>Tecnologia que gera resultados</h2>
+      <p>
+        Somos uma empresa fictícia criada para demonstrar
+        o desenvolvimento e a publicação de aplicações Web.
+      </p>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+        <strong>100%</strong>
+        <span>Foco em tecnologia</span>
+      </div>
+      <div class="stat-card">
+        <strong>24/7</strong>
+        <span>Disponibilidade planejada</span>
+      </div>
+      <div class="stat-card">
+        <strong>Web</strong>
+        <span>Soluções digitais</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section services" id="servicos">
+    <div class="section-heading">
+      <span class="tag">O QUE FAZEMOS</span>
+      <h2>Nossos serviços</h2>
+      <p>Conheça nossas soluções tecnológicas.</p>
+    </div>
+
+    <div class="cards">
+      <article class="service-card">
+        <div class="service-icon">🌐</div>
+        <h3>Desenvolvimento Web</h3>
+        <p>Criação de sites responsivos e aplicações modernas.</p>
+        <a href="#contato">Solicitar serviço →</a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">💻</div>
+        <h3>Sistemas</h3>
+        <p>Desenvolvimento de sistemas para gestão empresarial.</p>
+        <a href="#contato">Solicitar serviço →</a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">☁️</div>
+        <h3>Cloud e Hosting</h3>
+        <p>Hospedagem e publicação de projetos na internet.</p>
+        <a href="#contato">Solicitar serviço →</a>
+      </article>
+    </div>
+  </section>
+
+<section class="section projects" id="projetos">
+
+  <div class="section-heading">
+    <span class="tag">PORTFÓLIO</span>
+    <h2>Projetos demonstrativos</h2>
+    <p>Explore nossos projetos e conheça nossas soluções.</p>
+  </div>
+
+  <div class="cards">
+
+    <article class="project-card">
+      <div class="project-visual project-one">01</div>
+      <div class="project-info">
+        <h3>Portal Empresarial</h3>
+        <p>Website institucional responsivo.</p>
+        <span>HTML · CSS · JavaScript</span>
+        <a class="project-link" href="portal.html">
+          Abrir projeto →
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-visual project-two">02</div>
+      <div class="project-info">
+        <h3>Painel Administrativo</h3>
+        <p>Interface de gestão de informações.</p>
+        <span>Frontend · Dashboard</span>
+        <a class="project-link" href="dashboard.html">
+          Abrir projeto →
+        </a>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-visual project-three">03</div>
+      <div class="project-info">
+        <h3>Cloud Hosting</h3>
+        <p>Projeto preparado para hospedagem Web.</p>
+        <span>Deploy · Hosting</span>
+        <a class="project-link" href="hosting.html">
+          Abrir projeto →
+        </a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+  <section class="section contact" id="contato">
+    <div class="section-heading">
+      <span class="tag">FALE CONOSCO</span>
+      <h2>Vamos conversar?</h2>
+      <p>Preencha o formulário demonstrativo abaixo.</p>
+    </div>
+
+    <form id="contactForm" class="contact-form">
+      <label for="name">Nome completo</label>
+      <input id="name" name="name" type="text"
+             placeholder="Digite seu nome" required minlength="3">
+
+      <label for="email">E-mail</label>
+      <input id="email" name="email" type="email"
+             placeholder="seu@email.com" required>
+
+      <label for="subject">Assunto</label>
+      <select id="subject" name="subject" required>
+        <option value="">Selecione um serviço</option>
+        <option value="Desenvolvimento Web">Desenvolvimento Web</option>
+        <option value="Sistemas">Sistemas</option>
+        <option value="Cloud e Hosting">Cloud e Hosting</option>
+      </select>
+
+      <label for="message">Mensagem</label>
+      <textarea id="message" name="message"
+                placeholder="Como podemos ajudar?"
+                required minlength="10"></textarea>
+
+      <button type="submit" class="btn btn-primary">
+        Enviar mensagem
+      </button>
+
+      <p id="formFeedback" class="feedback" role="status"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="footer">
+  <a href="#inicio" class="logo">Tech<span>Solutions.</span></a>
+  <p>Projeto acadêmico UC4 — Demonstração de Hosting e Deploy.</p>
+  <a href="#inicio">Voltar ao topo ↑</a>
+  <p class="copyright">© 2026 TechSolutions. Projeto demonstrativo.</p>
+</footer>
+
+</body>
+</html>

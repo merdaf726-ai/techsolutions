@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel Administrativo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Tech<span>Solutions.</span></a>
+    <a href="index.html#projetos">Voltar ao portfólio</a>
+  </header>
+
+  <section class="section">
+    <span class="tag">PROJETO 02</span>
+    <h1>Painel Administrativo</h1>
+    <p>Dashboard demonstrativo de gestão empresarial.</p>
+
+    <div class="stats">
+      <div class="stat-card">
+        <strong id="usuarios">125</strong>
+        <span>Usuários cadastrados</span>
+      </div>
+      <div class="stat-card">
+        <strong>48</strong>
+        <span>Projetos ativos</span>
+      </div>
+      <div class="stat-card">
+        <strong>92%</strong>
+        <span>Desempenho</span>
+      </div>
+    </div>
+
+    <div style="margin-top:30px">
+      <button class="btn btn-primary" onclick="
+        document.getElementById('usuarios').textContent =
+        Number(document.getElementById('usuarios').textContent) + 1;
+      ">
+        Adicionar usuário de demonstração
+      </button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    Projeto demonstrativo UC4
+  </footer>
+</body>
+</html>
